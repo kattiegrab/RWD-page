@@ -1,0 +1,554 @@
+$my-grey: #313234
+*
+	box-sizing: border-box
+body 
+	font-family: 'Open Sans', sans-serif
+	margin: 0 auto
+
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+
+header 
+	background-color: $my-grey
+	height: 50px
+
+header
+	nav
+		img 
+			padding: 10px 0
+		ul 
+			background-color: $my-grey
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			line-height: 50px
+			li 
+				display: inline-block
+				&:hover
+					background-color: #ccc
+					cursor: pointer
+				a 
+					line-height: 50px
+					padding: 0 20px
+					color: #fff
+					text-decoration: none
+					text-transform: uppercase
+.hero 
+	width: 100%
+	height: 100vh
+	box-sizing: border-box
+	text-align: center
+	background: $my-grey url(https://static.pexels.com/photos/351961/pexels-photo-351961.jpeg) 0/cover
+	background-position: center
+	overflow: hidden
+
+.slogan 
+	background-color: rgba(49, 51, 50, 0.5)
+	float: right
+	max-width: 800px
+	margin-top: 40vh
+	h1 
+		text-transform: uppercase
+		color: white
+		width: 50%
+		text-align: left
+		padding-left: 50px
+
+.light 
+	font-weight: 100
+.row
+	&:after
+		content: " "
+		display: table
+		clear: both
+	&:before 
+		content: " "
+		display: table
+		clear: both
+
+[class*="col"] 
+	float: left
+	min-height: 1px
+	box-sizing: border-box
+
+.col-1
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33%
+.col-5
+	width: 41.66%
+.col-6
+	width: 50%
+.col-7
+	width: 58.33%
+.col-8
+	width: 66.66%
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66%
+.col-12
+	width: 100%
+.col-offset-1
+	margin-left: 8.33%
+.col-offset-2
+	margin-left: 16.66%
+.col-offset-3
+	margin-left: 25%
+.col-offset-4
+	margin-left: 33.33%
+.col-offset-5
+	margin-left: 41.66%
+.col-offset-6
+	margin-left: 50%
+.col-offset-7
+	margin-left: 58.33%
+.col-offset-8
+	margin-left: 66.66%
+.col-offset-9
+	margin-left: 75%
+.col-offset-10
+	margin-left: 83.33%
+.col-offset-11
+	margin-left: 91.66%
+
+.benefits 
+	text-align: center
+	h3 
+		text-transform: uppercase
+		&:hover
+			color: #00C7E8
+
+section
+	.container 
+		margin: 50px auto
+
+.icon-btn 
+	width: 75px
+	height: 75px
+	border: 0 #fff
+	border-radius: 10%
+	margin: 0 auto
+	cursor: pointer
+	font-size: 40px
+	line-height: 75px
+	color: white
+	background-color: #313332
+	text-align: center
+	transition: width 2s
+	&:hover 
+		background-color: #00C7E8
+		width: 100px
+
+.img-1 
+	background: url(https://images.pexels.com/photos/348323/pexels-photo-348323.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-2 
+	background: url(https://images.pexels.com/photos/75652/boards-glasses-smartphone-phone-75652.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-3 
+	background: url(https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-4 
+	background: url(https://images.pexels.com/photos/301723/pexels-photo-301723.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-5 
+	background: url(https://images.pexels.com/photos/204611/pexels-photo-204611.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-6 
+	background: url(https://images.pexels.com/photos/210217/pexels-photo-210217.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-7 
+	background: url(https://images.pexels.com/photos/51415/pexels-photo-51415.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-8 
+	background: url(https://images.pexels.com/photos/3129/laptop-notebook-grass-meadow.jpg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-9 
+	background: url(https://images.pexels.com/photos/300412/pexels-photo-300412.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-10 
+	background: url(https://images.pexels.com/photos/141676/pexels-photo-141676.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.photos 
+	box-sizing: border-box
+	max-height: 200px
+	line-height: 200px
+	background-size: cover
+	background-position: center
+	text-align: center
+
+
+.layer:hover 
+	background-color: rgba(0,0,0,0.5)
+
+
+.layer 
+	i.fa 
+		background-color: white
+		border-radius: 5%
+		margin: 0
+		font-size: 15px
+		right: 35%
+		border-radius: 5px
+		color: black
+		height: 20px
+		width: 20px
+		line-height: 20px
+		visibility: hidden
+
+.layer:hover i.fa 
+	visibility: visible
+
+.gallery .row .col-12 h2 
+	text-transform: uppercase
+	text-align: center
+	font-weight: bolder
+
+.gallery .row .col-12 p 
+	text-align: center
+	margin: 0 200px
+	margin-bottom: 15px
+
+.img-11
+	background: url(https://images.pexels.com/photos/119705/pexels-photo-119705.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-12
+	background: url(https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-13
+	background: url(https://images.pexels.com/photos/211997/pexels-photo-211997.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.img-14
+	background: url(https://images.pexels.com/photos/27411/pexels-photo-27411.jpg?w=1260&h=750&auto=compress&cs=tinysrgb)
+.circle
+	height: 225px
+	width: 225px
+	border-radius: 50%
+	background-size: cover
+	background-position: center
+	text-align: center
+	font-size: 25px
+	padding: 0
+	margin: 30px
+	&:hover
+		opacity: 0.5	
+	h3 
+		padding-top: 60px
+		color: transparent
+		font-weight: bold
+		&:hover 
+			color: #000
+
+.team 
+	.container 
+		.row 
+			.col-3 
+				p 
+					text-align: center
+					font-weight: bold
+					font-size: 20px
+
+.img-15 
+	background: url(https://images.pexels.com/photos/348323/pexels-photo-348323.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb)
+	height: 200px
+	background-size: cover
+	background-position: center
+	margin-top: 100px
+	overflow: hidden
+
+.photo 
+	background-color: #313233
+	color: white
+	height: 300px
+	h3 
+		text-transform: uppercase
+		margin-left: 20px
+		margin-top: 70px
+		font-size: 25px
+		font-weight: 700
+	p 
+		font-size: 15px
+		margin-top: 0
+		margin-left: 5px
+		margin-right: 10px
+.numbers 
+	height: 300px
+	h1 
+		font-size: 80px
+		font-weight: 800
+		text-align: center
+		margin-bottom: 0
+	p 
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		margin-top: 0
+		color: #00C7E8
+		font-weight: bold
+.footer
+	background-color: #313332
+	height: 350px
+	color: white
+	.col-4 
+		margin-right: 10px
+		p 
+			margin-right: 5px
+		h2 
+			text-transform: uppercase
+			font-weight: 700
+			position: relative
+			overflow: hidden
+			margin-right: 20px
+			&:after 
+				display: inline-block
+				content: " "
+				height: 2px
+				background: white
+				position: absolute
+				width: 80%
+				top: 50%
+				margin-top: -2px
+				margin-left: 10px
+	i.fa 
+		color: white
+		background-color: transparent
+		font-size: 20px
+		height: 30px
+		width: 30px
+		line-height: 30px
+		border-radius: 5%
+		margin-right: 5px
+		text-align: center
+		&:hover 
+			background-color: #00CAE5
+
+footer 
+	background-color: #252726
+	height: 60px
+	text-align: center
+	color: white
+	padding-top: 20px
+
+@media (max-width: 767px)
+	.col-s-1
+		width: 8.33% 
+	.col-s-2
+		width: 16.66% 
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33% 
+	.col-s-5
+		width: 41.66% 
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33% 
+	.col-s-8
+		width: 66.66% 
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33% 
+	.col-s-11
+		width: 91.66% 
+	.col-s-12
+		width: 100% 
+
+	body 
+		margin: 0 auto
+	
+	.hero 
+		height: 80vh
+		width: 100%
+		
+	header
+		height: auto
+		nav
+			text-align: center
+			ul 
+				margin: 0
+				padding: 0
+				float: none
+				li 
+					display: block
+					width: 100%
+	[class*="col-"] 
+		float: none
+    
+	.numbers
+		height: auto
+		
+	.footer
+		width: 100%
+		height: auto
+		text-align: center
+		float: none
+
+	.slogan 
+		width: 100%
+		height: auto
+		h1 
+			font-size: 0,8em
+	
+	.layer
+		&:hover
+			background: none
+		i.fa
+			visibility: visible
+	
+	.photos 
+		width: 100%
+		height: auto 	
+	
+	.img-15 
+		display: none
+	
+	.photo 
+		width: 100%
+		height: auto
+		h3 
+			text-align: center
+	
+	.photo 
+		padding-bottom: 30px
+	
+	.circle 
+		margin: 30px auto
+	
+	.team 
+		display: block
+		overflow: hidden
+	
+	.footer 
+		height: auto
+		text-align: center
+	
+	footer
+		width: 100%
+		height: auto
+		padding-top: 5px
+		p 
+			margin: 0
+			padding: 10px
+		h2
+			&:after 
+				display: none
+	
+	section
+		.container 
+			margin: 0 auto
+	
+	.gallery
+		.row
+			.col-12
+				p 
+					margin: 0
+@media (min-width: 768px)
+	.col-m-1
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4
+		width: 33.33%
+	.col-m-5
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
+		
+	body 
+		margin: 0 auto
+	
+	.hero 
+		height: 80vh
+		width: 100%
+		
+	header
+		height: auto
+		nav
+			text-align: center
+			ul 
+				margin: 0
+				padding: 0
+				float: none
+				li 
+					display: block
+					width: 100%
+	.numbers
+		height: auto
+		
+	.footer
+		width: 100%
+		height: auto
+		text-align: center
+		float: none
+
+	.slogan 
+		width: 100%
+		height: auto
+		h1 
+			font-size: 0,8em
+	
+	.layer
+		&:hover
+			background: none
+		i.fa
+			visibility: visible
+	
+	.photos 
+		width: 100%
+		height: auto 	
+	
+	.img-15 
+		display: none
+	
+	.photo 
+		width: 100%
+		height: auto
+		h3 
+			text-align: center
+	
+	.photo 
+		padding-bottom: 30px
+	
+	.circle 
+		margin: 30px auto
+	
+	.team 
+		overflow: hidden
+	
+	.footer 
+		height: auto
+		text-align: center
+	
+	footer
+		width: 100%
+		height: auto
+		padding-top: 5px
+		p 
+			margin: 0
+			padding: 10px
+		h2
+			&:after 
+				display: none
+	
+	section
+		.container 
+			margin: 0 auto
+	
+	.gallery
+		.row
+			.col-12
+				p 
+					margin: 0
