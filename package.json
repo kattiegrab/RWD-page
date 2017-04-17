@@ -1,0 +1,27 @@
+{
+  "name": "kodilla-rwd-page",
+  "version": "1.0.0",
+  "description": "kodilla excercise - making rwd page",
+  "main": "script.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "kodilla"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Kasia Grabowska",
+  "license": "ISC"
+}
