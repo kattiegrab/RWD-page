@@ -313,7 +313,6 @@ section .container {
 
 .footer {
   background-color: #313332;
-  height: 350px;
   color: white; }
   .footer .col-4 {
     margin-right: 10px; }
@@ -350,10 +349,10 @@ section .container {
 
 footer {
   background-color: #252726;
-  height: 60px;
   text-align: center;
   color: white;
-  padding-top: 20px; }
+
+ }
 
 @media (max-width: 767px) {
   .col-s-1 {
@@ -464,7 +463,9 @@ footer {
   footer {
     width: 100%;
     height: auto;
-    padding-top: 5px; }
+    padding-top: 5px; 
+    margin-bottom: 0;
+  }
     footer p {
       margin: 0;
       padding: 10px; }
@@ -476,7 +477,7 @@ footer {
 
   .gallery .row .col-12 p {
     margin: 0; } }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .col-m-1 {
     width: 8.33%; }
 
@@ -573,19 +574,14 @@ footer {
 
   .team {
     overflow: hidden; }
-
-  .footer {
-    height: auto;
-    text-align: center; }
-
   footer {
     width: 100%;
     height: auto;
-    padding-top: 5px; }
-    footer p {
+ }
+  footer p {
       margin: 0;
       padding: 10px; }
-    footer h2:after {
+  footer h2:after {
       display: none; }
 
   section .container {
